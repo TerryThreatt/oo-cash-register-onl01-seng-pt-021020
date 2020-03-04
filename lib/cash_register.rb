@@ -1,5 +1,5 @@
 class CashRegister
-  attr_accessor :total, :price, :items, :last_transaction 
+  attr_accessor :price, :items, :last_transaction 
   attr_reader :discount
   
   def initialize(discount_amount = 0)
@@ -10,6 +10,10 @@ class CashRegister
   
   def total=(num) #getter method 
     @total = num 
+  end 
+  
+  def total
+    @total 
   end 
   
   def add_item(item, price, quantity = 1)
