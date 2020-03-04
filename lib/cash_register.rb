@@ -8,7 +8,7 @@ class CashRegister
     @items = []
   end 
   
-  def total=(num)
+  def total=(num) #getter method 
     @total = num 
   end 
   
