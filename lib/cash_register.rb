@@ -24,9 +24,10 @@ class CashRegister
     #     i += 1
     #   end
     # else
+    @items << item
     # end
     @total += (price * quantity)
-    @items << item
+   
     @last_transaction = @total
     # @total
   end
